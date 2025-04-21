@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 100%;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #2c2c2c;
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .notes-heading {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      /* Space between heading and cards */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .card {
+      background-color: #444;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      /* width:100%; */
+      margin: 0 10px 20px;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title,
+    .task-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .task {
+      background: #555;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .inputs {
+      display: none;
+    }
+
+    .top_container {
+      width: 15%;
+      background-color: #444;
+      margin-bottom: 20px;
+      /* padding: 15px; */
+      border-radius: 8px;
+      margin: 0 10px 20px;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="hidden"] {
+      background: #333;
+      color: white;
+      border: 1px solid #666;
+      padding: 5px;
+      border-radius: 4px;
+      width: 100%;
+      height: 21px;
+    }
+
+    .edit-btn,
+    .save-btn,
+    .delete-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .save-btn {
+      background-color: #28a745;
+    }
+    .save-btn:hover {
+      background-color: #097422;
+    }
+
+
+    .edit-btn:hover,
+    .delete-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .delete-btn {
+      background-color: #dc3545;
+    }
+
+    .delete-btn:hover {
+      background-color: #c82333;
+    }
+
+    .button-container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .inactive {
+      display: none;
+    }
+
+    .active {
+      display: inline;
+    }
+
+    .add-card-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .add-card-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="notes-heading">
+    <!-- <h2>Notes App</h2> -->
+    <button id="addCardBtn" class="add-card-btn" onclick="addCardFunction()">Add Card</button>
+  </div>
+
+  <div class="cards-container" id="cardsContainer">
+    <!-- Existing cards go here -->
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
