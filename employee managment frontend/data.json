@@ -1,0 +1,137 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "imageUrl": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "johndoe@example.com",
+    "contactNumber": "+1234567890",
+    "address": "123 Main St, Springfield, IL",
+    "dob": "1990-05-14"
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "imageUrl": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "janesmith@example.com",
+    "contactNumber": "+0987654321",
+    "address": "456 Elm St, Springfield, IL",
+    "dob": "1992-09-22"
+  },
+  {
+    "firstName": "Mark",
+    "lastName": "Johnson",
+    "imageUrl": "https://randomuser.me/api/portraits/men/65.jpg",
+    "email": "markjohnson@example.com",
+    "contactNumber": "+1122334455",
+    "address": "789 Oak St, Springfield, IL",
+    "dob": "1985-12-30"
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "imageUrl": "https://randomuser.me/api/portraits/women/42.jpg",
+    "email": "emilydavis@example.com",
+    "contactNumber": "+1231231234",
+    "address": "101 Pine St, Springfield, IL",
+    "dob": "1995-03-10"
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "imageUrl": "https://randomuser.me/api/portraits/men/78.jpg",
+    "email": "michaelwilliams@example.com",
+    "contactNumber": "+1432567890",
+    "address": "202 Maple St, Springfield, IL",
+    "dob": "1987-06-11"
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Martinez",
+    "imageUrl": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "sophiamartinez@example.com",
+    "contactNumber": "+1543987654",
+    "address": "303 Birch St, Springfield, IL",
+    "dob": "1993-02-25"
+  },
+  {
+    "firstName": "David",
+    "lastName": "Garcia",
+    "imageUrl": "https://randomuser.me/api/portraits/men/19.jpg",
+    "email": "davidgarcia@example.com",
+    "contactNumber": "+1654789101",
+    "address": "404 Cedar St, Springfield, IL",
+    "dob": "1990-08-15"
+  },
+  {
+    "firstName": "Olivia",
+    "lastName": "Rodriguez",
+    "imageUrl": "https://randomuser.me/api/portraits/women/86.jpg",
+    "email": "oliviarodriguez@example.com",
+    "contactNumber": "+1765894302",
+    "address": "505 Ash St, Springfield, IL",
+    "dob": "1994-12-03"
+  },
+  {
+    "firstName": "James",
+    "lastName": "Lee",
+    "imageUrl": "https://randomuser.me/api/portraits/men/44.jpg",
+    "email": "jameslee@example.com",
+    "contactNumber": "+1876123456",
+    "address": "606 Oakwood St, Springfield, IL",
+    "dob": "1989-07-18"
+  },
+  {
+    "firstName": "Ava",
+    "lastName": "Walker",
+    "imageUrl": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "avawalker@example.com",
+    "contactNumber": "+1987234567",
+    "address": "707 Redwood St, Springfield, IL",
+    "dob": "1996-01-10"
+  },
+  {
+    "firstName": "Lucas",
+    "lastName": "Young",
+    "imageUrl": "https://randomuser.me/api/portraits/men/70.jpg",
+    "email": "lucasyoung@example.com",
+    "contactNumber": "+1098765432",
+    "address": "808 Magnolia St, Springfield, IL",
+    "dob": "1991-09-30"
+  },
+  {
+    "firstName": "Chloe",
+    "lastName": "Hernandez",
+    "imageUrl": "https://randomuser.me/api/portraits/women/53.jpg",
+    "email": "chloeh@example.com",
+    "contactNumber": "+1209876543",
+    "address": "909 Palm St, Springfield, IL",
+    "dob": "1993-11-22"
+  },
+  {
+    "firstName": "Ethan",
+    "lastName": "King",
+    "imageUrl": "https://randomuser.me/api/portraits/men/17.jpg",
+    "email": "ethanking@example.com",
+    "contactNumber": "+1312456789",
+    "address": "1010 Sequoia St, Springfield, IL",
+    "dob": "1988-04-05"
+  },
+  {
+    "firstName": "Mia",
+    "lastName": "Scott",
+    "imageUrl": "https://randomuser.me/api/portraits/women/13.jpg",
+    "email": "miascott@example.com",
+    "contactNumber": "+1412356789",
+    "address": "2020 Cypress St, Springfield, IL",
+    "dob": "1992-07-17"
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName": "Allen",
+    "imageUrl": "https://randomuser.me/api/portraits/men/25.jpg",
+    "email": "benjaminallen@example.com",
+    "contactNumber": "+1523456789",
+    "address": "3030 Birchwood St, Springfield, IL",
+    "dob": "1990-10-28"
+  }
+]

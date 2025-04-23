@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .main-box {
+            display: flex;
+            height: 500px;
+            margin: 20px;
+            background-color: #444;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .left,
+        .right {
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .left {
+            width: 30%;
+            border-right: 1px solid #555;
+        }
+
+        .right {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            /* Align content at the top */
+        }
+
+        .heading {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .employee-list {
+            list-style-type: none;
+            padding: 0;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .employee-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #555;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        .employee-list li span {
+            margin-right: 10px;
+        }
+
+        .employee-list li .delete {
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+        }
+
+        .employee-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            /* Add margin to give space from heading */
+        }
+
+        .employee-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .employee-info span {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .inActive {
+            display: none;
+        }
+
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .modal-content button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal-content button:hover {
+            background-color: #0056b3;
+        }
+
+        .add-employee-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-employee-btn:hover {
+            background-color: #218838;
+        }
+
+        .add-emp-btn-cont {
+            width: 99%;
+            display: flex;
+            justify-content: right;
+        }
+
+        li {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+        <div class="left">
+            <div class="heading">Employee List</div>
+            <ul class="employee-list" id="employeeList">
+                <!-- Dummy Employee Data -->
+                <li><span>John Doe</span><span class="delete">X</span></li>
+                <li><span>Jane Smith</span><span class="delete">X</span></li>
+                <li><span>Jim Beam</span><span class="delete">X</span></li>
+                <li><span>Jake Peralta</span><span class="delete">X</span></li>
+                <li><span>Amelia Earhart</span><span class="delete">X</span></li>
+                <li><span>Harry Potter</span><span class="delete">X</span></li>
+            </ul>
+        </div>
+
+        <div class="right" id="userDisplayContainer">
+
+        </div>
+    </div>
+    <div class="add-emp-btn-cont">
+        <button id="addEmpButton" class="add-employee-btn">Add Employee</button>
+    </div>
+
+    <!-- Add Employee Modal -->
+    <div class="modal inActive" id="addEmployeeModal">
+        <form onsubmit="handleSubmit(event)" class="modal-content">
+            <input type="text" required id="firstName" placeholder="First Name">
+            <input type="text" required id="lastName" placeholder="Last Name">
+            <input type="url" id="imageUrl" required placeholder="Image URL">
+            <input type="email" id="email" required placeholder="Email">
+            <input type="tel" id="contactNumber" required placeholder="Contact Number">
+            <input type="text" id="address" required placeholder="Address">
+            <input type="date" id="dob" required placeholder="Date of Birth">
+            <input type="submit" style="cursor: pointer;">Save Employee</input>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
