@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Timer UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        .timer-container {
+            background: #1e1e1e;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        .inputs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+
+        .inputs input {
+            width: 60px;
+            padding: 0.5rem;
+            font-size: 1rem;
+            text-align: center;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+        }
+
+        .inputs input::placeholder {
+            color: #aaa;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .buttons button {
+            padding: 0.6rem 1.2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .start {
+            background-color: #00c853;
+            color: white;
+        }
+
+        .start:hover {
+            background-color: #00b34a;
+        }
+
+        .reset {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        .reset:hover {
+            background-color: #b71c1c;
+        }
+
+        .stop {
+            background-color: #b78be1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="timer-container">
+        <div class="inputs">
+            <input id="hour" type="number" placeholder="HH" min="0" max="23">
+            <input id="minute" type="number" placeholder="MM" min="0" max="59">
+            <input id="seconds" type="number" placeholder="SS" min="0" max="59">
+        </div>
+        <div class="buttons">
+            <button class="start" id="start">Start</button>
+            <button class="stop"  id="stop">stop</button>
+            <button class="reset" id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
